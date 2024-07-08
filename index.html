@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+
+
+<body>
+    <header>
+        <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+        <main class="main_principal">
+            <div class="principal">
+                <input class="Insertar_texto" type="text" id="entrada_de_texto" placeholder=" Inserte el texto aqui">
+               
+                <div class="botones">
+                    <div class="validacion">
+                        <p><img class="signo_advertencia" src="./imagenes/bi_exclamation-circle-fill.png" >Solo letras minúsculas y sin acentos.</p>
+                    </div>
+                     <button onclick="encriptarTexto()" class="boton_encript">Encriptar</button>
+                     <button onclick="desencriptarTexto()" class="boton_desencript">Desencriptar</button>
+        
+                </div>
+                
+            </div>
+            
+
+            <div class ="container_resultados">
+                <img src="./imagenes/Rectangle 1.png" alt="Rectangulo donde se exibe la respuesta">
+                <button class="boton_copiar">Copiar</button>
+                <p class="Lugar_resultado" id="resultado"> aqui se muestra el resultado</p>
+            </div>
+       
+
+         </main>
+    <footer>
+        <p>
+            Proyecto desarrollado por Sebastián Álvarez Gómez.
+            Creado en el año 2024.
+        </p>
+    </footer>
+    
+    <script src="./app.js" defer></script>
+</body>
+
+
+
+
+
+</html>
