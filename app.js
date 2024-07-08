@@ -1,9 +1,22 @@
 
+function OcultarImagen(){
+    let elemento = document.getElementById("ImagenOculta");
+    elemento.style.display = "none";
+}
+
+
+function limpiarEspacio(){
+document.getElementById("entrada_de_texto").value = "";
+
+}
+
+
 function mostrarResultado(id, textoNuevo){
-    let texto = textoNuevo;
     let parrafo = document.getElementById(id);
-    parrafo.textContent = textoNuevo;
+    parrafo.innerHTML = textoNuevo;
+    OcultarImagen();
     parrafo.style.display = 'block';
+    limpiarEspacio();
 
 }
 

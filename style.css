@@ -50,9 +50,15 @@ body{
 .Insertar_texto{
    margin-left: 240px;
    margin-top: 168px;
-   margin-bottom: 808px;
+   margin-bottom: 400px;
    margin-right: 623px;
-    
+   width: 50%; /* Ancho completo del contenedor */
+   height: 200px; /* Altura inicial del área de texto */
+   padding: 10px; /* Espacio interno alrededor del texto */
+   font-size: 16px; /* Tamaño de fuente */
+   line-height: 1.5; 
+   color: var(--color-azul);
+   background-color: var(--color-blancoOscuro); 
 }
 
 
@@ -156,6 +162,8 @@ botones:hover{
     left: 0;
     z-index: 1; 
     bottom: 100%;
+    white-space: pre-wrap;
+    overflow: auto;
 }
 
 .MuñecoB{
@@ -167,11 +175,13 @@ botones:hover{
 }
 
 .Lugar_resultado{
-    font-size: 24;
+    font-size: 30;
     font-family: "IBM Plex Sans", sans-serif;
+    color: var(--color-gris);
     position: absolute;
     bottom: 450px;
     left: 25%;
+ 
     
 }
 
