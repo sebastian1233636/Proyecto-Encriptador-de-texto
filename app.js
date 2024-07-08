@@ -1,4 +1,23 @@
 
+function updateClipboard(newClip) {
+    navigator.clipboard.writeText(newClip).then(
+        () => {
+            alert('Texto copiado al portapapeles');
+        },
+        () => {
+            alert('Error al copiar el texto al portapapeles');
+        }
+    );
+}
+
+
+function BotonCopiar(){
+    let copia = document.getElementById("resultado").innerText;
+    updateClipboard(copia);
+}
+
+
+
 function OcultarImagen(){
     let elemento = document.getElementById("ImagenOculta");
     elemento.style.display = "none";
@@ -66,15 +85,16 @@ function encriptarTexto(){
     return mostrarResultado("resultado",textoResultado);
 }
 
-function desencriptarTexto(){
+function desencriptarTexto() {
     let inputT = document.getElementById("entrada_de_texto").value;
     let textoResultado = inputT;
-    textoResultado = textoResultado.replace(/enter/g, "e");
-    textoResultado = textoResultado.replace(/imes/g, "i");
-    textoResultado = textoResultado.replace(/ai/g, "a");
-    textoResultado = textoResultado.replace(/ober/g, "o");
+    
     textoResultado = textoResultado.replace(/ufat/g, "u");
-    return mostrarResultado("resultado",textoResultado);
+    textoResultado = textoResultado.replace(/ober/g, "o");
+    textoResultado = textoResultado.replace(/ai/g, "a");
+    textoResultado = textoResultado.replace(/imes/g, "i");
+    textoResultado = textoResultado.replace(/enter/g, "e");
+    
+    return mostrarResultado("resultado", textoResultado);
 }
-
 

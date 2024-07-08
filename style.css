@@ -192,3 +192,132 @@ botones:hover{
     padding: 24px;
 
 }
+
+
+/*--------------------RESPOSIVIDAD TABLET-------------------*/
+@media(max-width: 768px){
+    .main_principal {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .RectanguloB {
+        transform: rotate(180deg);
+        width: 688px;
+        height: 133px;
+        margin-left: 5%;
+    }
+
+    .MuñecoB {
+        visibility: hidden;
+    }
+
+
+
+    .Lugar_resultado{
+        font-size: 30;
+        font-family: "IBM Plex Sans", sans-serif;
+        color: var(--color-gris);
+        width: 688px;
+        height: 133px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .boton_copiar{
+        padding: 24px 24px;
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        z-index: 3;
+        font-size: 16px;
+        border-radius: 24px;
+        background-color: var(--color-blanco2);
+        color: var(--color-azul);
+        width: 328px;
+    }
+        
+    
+}
+
+/*Responsividad teléfono movil*/
+@media(max-width: 375px){
+    .main_principal {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .RectanguloB {
+        transform: rotate(180deg);
+        width: 688px;
+        height: 133px;
+        margin-left: 5%;
+    }
+
+    .MuñecoB {
+        visibility: hidden;
+    }
+
+
+
+    .Lugar_resultado{
+        font-size: 30;
+        font-family: "IBM Plex Sans", sans-serif;
+        color: var(--color-gris);
+        width: 688px;
+        height: 133px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .boton_copiar{
+        padding: 24px 24px;
+        position: absolute;
+        top: 90px;
+        left: 100%;
+        z-index: 3;
+        font-size: 16px;
+        border-radius: 24px;
+        background-color: var(--color-blanco2);
+        color: var(--color-azul);
+        width: 328px;
+    }
+        
+    
+}
